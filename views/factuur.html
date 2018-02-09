@@ -1,0 +1,104 @@
+
+<link href="https://rawgit.com/daanvanbeusekom/Ticketing/master/CSS/style.css" rel="stylesheet" type="txt/css">
+<link href="https://rawgit.com/daanvanbeusekom/Ticketing/master/CSS/factuur.css" rel="stylesheet" type="txt/css">
+<div id="top_wrapper">
+            <h1><a href="home">Ticketing</a></h1>
+            <menu>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="factuur.html">Factuur</a></li>
+                        <li><a href="verzender.html">Vragen</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="sign_out.html">Uitloggen</a></li>
+                    </ul>
+                </nav>
+            </menu>
+        </div>
+        
+        <div id="body_wrapper">
+            <h1>Factuur Nr.{{id}}</h1>
+            <div class="info" id="info_wrapper">
+                <div class="invoice-box">
+					<table cellpadding="0" cellspacing="0">
+						<tr class="top">
+							<td colspan="2">
+								<table>
+									<tr>
+										<td class="title">
+											<h1 style="font-size: 35; line-height: 0px;"> Logo </h1>
+										</td>
+										
+										<td>
+											Nummer: {{id}}<br>
+											Gemaakt: Januari 31, 2017<br>
+											Deadline: Februari 31, 2017
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- Personal details -->
+						<tr class="information">
+							<td colspan="2">
+								<table>
+									<tr>
+										<td>
+											<b>Van:</b><br>
+											GH Lyceum<br>
+											2405 VS Tolstraat<br>
+											Alphen a/d Rijn, ZH 2405 VS
+										</td>
+										
+										<td>
+											<b>Aan:</b><br>
+											{{reciever}}<br>
+											joost@example.com</br>
+											Alphen a/d Rijn, ZH 2408 RX
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						
+						<!-- Payment methode -->
+						<tr class="heading">
+							<td> Betaal methode </td><td></td>
+						</tr>
+						
+						<tr class="details">
+							<td> Ideal </td>
+						</tr>
+						<!-- Price list -->
+						<tr class="heading">
+							<td> Item </td>
+							<td> Prijs </td>
+						</tr>
+						
+						<tr class="item">
+							<td> Website design </td>
+							<td> €300.00 </td>
+						</tr>
+						
+						<tr class="item">
+							<td> Hosting (3 maanden) </td>
+							<td> €75.00 </td>
+						</tr>
+						
+						<tr class="item last">
+							<td> Domein naam (1 jaar) </td>
+							<td> €10.00 </td>
+						</tr>
+						<!-- Total cost -->
+						<tr class="total">
+							<td></td>
+							<td> Totaal: €385.00 </td>
+						</tr>
+					</table>
+				</div>
+            </div>
+        </div>
+        
+        <div id="footer_wrapper">
+            <p id="left">Tickting System</p>
+            <p id="right">Copyright 2018</p>
+        </div>
